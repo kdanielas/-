@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/png" href="jpg/favicon.ico">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/mi-css.css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Patrick+Hand+SC" rel="stylesheet">
+
+</head>
+<body>
+
+ <div class="menu"  id="menu" style="background: none">
+
+    <div class="brand" style="z-index: 2000">
+       <a href="index.html">
+       <img src="jpg/logo.png" alt="">
+       </a>
+    </div>
+    
+    <div class="menu-opciones"style="z-index: 2000">
+       
+            <ul>
+          
+              <li><a href="index.html" >Projects
+         
+              </a>
+           
+              </li> 
+  
+              
+                    <li><a href="about.html" style="color:#F6B71E;" >About</a></li>
+             
+                    
+                    
+                       <li><a href="contact.html">Contact</a></li>
+             
+                   
+                 </ul>
+
+    </div>
+    
+        <div class="boton-menu"style="z-index: 2000">
+       
+        <span onclick="func()">
+          <button   onclick="boton(this)" class="fa fa-menor" style="background: none">
+              
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+          </span>
+
+    </div>
+    </div>
+
+    <div id="nav" class="menuIn">
+              <ul>
+          
+              <li><a href="index.html">Projects</a></li> 
+         <hr>
+              
+                    <li><a href="about.html">About</a></li>
+                    <hr>
+                    
+                    
+                       <li><a href="contact.html">Contact</a></li>
+                    <hr>
+                   
+                 </ul>
+      
+               <!--div class="follow-me">       
+    <div class="redes-menu">
+  
+        <span >
+       <a href="https://www.behance.net/danielasan0fd3"><i class="fab fa-behance" ></i></a> 
+       </span>
+       <span  style="margin: 4px; color: darkgrey">
+      <a href="https://www.instagram.com/minibu.0.1/"> <i class="fab fa-instagram"></i> </a> 
+      
+</span>
+     <span><a href="https://www.linkedin.com/in/kelly-daniela-sanchez-rojas/"><i class="fab fa-linkedin-in"></i></a></span>
+     
+         </div>
+        
+    </div-->  
+      
+     
+       
+     </div>
+    
+    <div class="contenido" style="justify-content: center">
+       
+<div class="about">
+   <!--div class="img-about">
+           <img src="jpg/about-1.png" alt="">
+       </div-->
+<div class="text-about">
+
+
+   
+   <h2>Hello</h2>
+   
+   <hr>
+    <p>
+
+
+an interactive media designer at Icesi University, during the last 3 years, I have had the opportunity to work on multiple projects related to the design of UX / UI, graphic design, visual identity and motion graphics.
+ <br>
+ <br>
+I consider myself a multidisciplinary designer, that can look at a project from different perspectives. I put special attention in the creative process, since conceptualization to the ideas materialization. I enjoy condensing ideas down to their simple form and crafting them into a concentrated dose. 
+ <br>
+ <br>
+I'm available for work and would love to collaborate on any upcoming project. 
+
+
+
+    </p>
+</div>   
+       
+    
+       
+       </div>
+
+      <div class="footer">
+           
+        <p>Copyright © 2019 -  Terms.</p>
+        <!--div class="redes">
+        <span  style="margin: 4px;">
+       <a href="https://www.behance.net/danielasan0fd3"><i class="fab fa-behance" ></i></a> 
+       </span>
+       
+       <span  style="margin: 4px;">
+      <a href="https://www.instagram.com/minibu.0.1/"> <i class="fab fa-instagram"></i> </a> 
+</span>
+          <span style="margin: 4px;"><a href="https://www.linkedin.com/in/kelly-daniela-sanchez-rojas/"><i class="fab fa-linkedin-in"></i></a></span>
+          </div-->
+
+        </div>
+    
+        </div>
+  
+    
+    
+    <script>
+function boton(x){
+    
+    x.classList.toggle("fa-mayor");
+}
+    function func(id) {
+       var e = document.getElementById("nav");
+     // e.style.height = '0%';
+       if(e.style.height == '120%')
+       
+          e.style.height = '0%';
+//e.style.transition = '3s';
+         
+       else
+          e.style.height = '120%';
+    }
+//-->
+        
+        window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    document.getElementById("menu").style.marginTop = "0px";
+ 
+  } else {
+    document.getElementById("menu").style.marginTop = "20px";
+  }
+}
+</script>
+</body>
+</html>

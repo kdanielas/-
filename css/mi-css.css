@@ -1,0 +1,1385 @@
+   /* --------------------------------LOAD PAGE empieza-------------------------- */
+@keyframes fadein {
+    from {
+        opacity:0;
+
+    }
+    to {
+        opacity:1;
+    
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+} 
+@-webkit-keyframes fadein { Safari and Chrome 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes upimage{
+        from {
+         margin-top: 300px;
+    }
+    to {
+        margin-top: 0px;
+    }
+} 
+
+   /* --------------------------------LOAD PAGE ACABA-------------------------- */ 
+   /* --------------------------------GENERAL EMPIEZA-------------------------- */ 
+        *{
+            overflow-x: hidden;
+           font-family: 'Roboto', sans-serif;
+    
+    
+            
+               
+        }
+body{
+    margin: -3px;
+     animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+  background: #FBFBFB;
+
+}
+
+h3{
+        font-family: 'Patrick Hand', cursive;
+}
+
+
+
+
+       /* --------------------------------GENERAL ACABA-------------------------- */     
+         /* --------------------------------Menu empieza-------------------------- */ 
+        #menu{
+            padding: 8px 25px;
+            width: 100%;
+            height: 60px;
+            margin: 0px;
+            margin-top: 40px;
+
+            align-items: center;
+            display: flex;
+            justify-content:space-between;
+       background: #FBFBFB;
+        
+            z-index: 3;
+         position: absolute;
+         
+             transition: margin-top 0.1s;
+        }
+
+
+        .brand{
+
+            justify-content: flex-start;
+         
+            width: 85px;
+            margin-left: 40px;
+     
+            
+        }
+
+.menu-opciones{
+     justify-content: flex-end;
+   // width: 355px;
+    width: 280px;
+  
+    
+}
+
+.menu-opciones li{
+    
+    display: inline;
+}
+
+.menu-opciones li a{
+    
+   font-family: 'Roboto', sans-serif;
+    font-size: .8em;
+      padding: 10px;
+  text-decoration: none;
+  color:grey;
+ text-align: center;
+    letter-spacing: 1px;
+}
+
+.menu-opciones li a:hover{
+    color:#987a32;
+    transition: .5s;
+}
+
+/*---- menu opciones white */
+.menu-opciones-white{
+     justify-content: flex-end;
+    width: 355px;
+  
+    
+}
+
+.menu-opciones-white li{
+    
+    display: inline;
+}
+
+.menu-opciones-white li a{
+    
+ font-family: 'Lora', serif;
+      padding: 10px;
+  text-decoration: none;
+  color:white;
+ text-align: center;
+    letter-spacing: 1px;
+}
+
+.menu-opciones-white li a:hover{
+    color:#987a32;
+    transition: .5s;
+}
+
+
+/*------- menu opciones white acaba*/
+
+.boton-menu{
+   display: none;
+            justify-content: flex-end;
+
+            margin: 0 50px;
+            background-color: none;
+        }
+        
+
+
+        
+        /* ------------------------... EMPIEZA boton toggle... ---------------------------------------*/
+    .fa{
+        width: 42px;
+  height: 35px;
+margin-top: 10px;
+        margin-right: 10px;
+border-style: none;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+        overflow: hidden;
+        outline:none;
+         
+    }
+    
+ .fa span {
+  display: block;
+  position: absolute;
+  height: 14px;
+  width: 95%;
+  background-image: url('menu.png');
+
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .1s ease-in-out;
+  -moz-transition: .1s ease-in-out;
+  -o-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+    
+.fa span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.fa span:nth-child(2) {
+  top: 9px;
+
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.fa span:nth-child(3) {
+  top: 19px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+   
+.fa.fa-mayor span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+  left: 4px;
+    border-radius: 4px;
+}
+
+.fa.fa-mayor span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.fa.fa-mayor span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 31px;
+  left: 4px;
+     border-radius: 4px;
+ 
+}
+    
+
+/* ------------------------... TERMINA boton toggle... ---------------------------------------*/
+        
+         /* --------------------------------menu acaba-------------------------- */ 
+        
+      /* --------------------------------Menu2 empieza-------------------------- */ 
+        #menu2{
+            padding: 8px 25px;
+            width: 100%;
+            height: 60px;
+            margin: 0px;
+            margin-top: -100px;
+
+            align-items: center;
+            display: flex;
+            justify-content:space-between;
+       background: #FBFBFB;
+        
+            z-index: 3;
+         position: absolute;
+       
+             transition: margin-top 0.1s;
+        }
+
+.menu{
+background-color: aqua;
+}
+        /* ------------------------... EMPIEZA menu interior... ---------------------------------------*/
+#nav {
+          margin-top: -60px;
+  height:0%;
+  width: 101%;
+  position: fixed;
+background-color: rgba(255,255,255,0.98);
+  overflow-y:hidden;
+transition: 0.5s;
+    z-index: 2;
+ 
+
+}
+
+#nav ul {
+    margin-top: 300px;
+
+}
+
+#nav ul li{
+width: 100%;
+ list-style: none;
+font-weight: 400;
+     margin-left: -20px;
+    font-size: 1.1em;
+}
+
+#nav ul li a{
+  font-family: 'Roboto', sans-serif;
+      padding: 18px;
+  text-decoration: none;
+ 
+  color: #000;
+  display: block;
+
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#nav ul li a:hover{
+    color: #F6B71E;
+    transition: .5s;
+   
+}
+
+#nav.menuIn  hr{
+    width:20px;
+    margin-top: -15px;
+    border-width: 1px;
+    border-radius: 5px;
+    color: #F6B71E;
+    border-style: solid;
+     -webkit-transform:rotate(1deg);
+}
+
+.follow-me{
+top: 800px;
+    
+    width: 100%;
+    
+    height: 20vh;
+    position: sticky;
+
+
+}
+
+ #nav.menuIn .follow-me .redes-menu hr{
+    width: 10%;
+
+     
+     
+border: 1;
+     color: white;
+height: 2px;
+ background: black;
+
+     background: linear-gradient(to right,  black 80%,#F6B71E 20%);
+     margin-top: 3px;
+     margin-bottom: 60px;
+        -webkit-transform:rotate(0deg);
+ 
+        border-radius:4px;  
+}
+
+.redes-menu{
+text-align: center;
+}
+
+.redes-menu h3{
+color: #F6B71E;
+    font-weight: 800;
+     font-size: 0.8em;
+     letter-spacing: 2px;
+}
+
+.redes-menu span a{
+    font-size: 1.2em;
+    margin: 12px;
+    color:#F6B71E;
+}
+
+.redes-menu p{
+     font-size: 0.8em;
+    font-weight: 300;
+}
+
+.redes-menu span a:hover{
+color: #F6B71E;
+    transition: .5s;
+}
+         /* --------------------------------rejilla Empieza-------------------------- */ 
+     /*   
+
+.col-1{
+    
+        width: 50%;  
+   height: 100vh;
+     overflow: hidden;
+             animation: image1 2s ease;
+        }
+
+.fila-3{
+            height: 92vh;    
+           display: flex;
+           flex-wrap: wrap; 
+            justify-content:space-between;
+            overflow: hidden;
+            
+        }   
+
+.col-3{
+            width: 33.33%;
+              animation: image4 2s ease;
+        }
+
+.col-4{
+            width: 33.33%;
+                animation: image5 2s ease;
+              
+        }
+
+.col-5{
+            width: 33.33%;
+                animation: image6 2s ease;
+        }  
+ 
+.image-card{
+            overflow: hidden;
+            margin-bottom: -9px;
+      margin-top: -1px;
+        }
+
+.image-card:hover{
+            overflow: hidden;
+          margin-bottom: -9px;
+                    margin-top: -1px;
+                
+        }
+        
+.col-1 img {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+    
+}
+
+.col-1:hover img{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+
+
+}
+
+.fila-3 img {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+    
+}
+
+.fila-3 .col-3:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+
+}
+.fila-3 .col-4:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+
+}
+.fila-3 .col-5:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+
+}
+.col-3 .image-container{
+                padding: 0px;
+            }
+.col-4 .image-container{
+                padding: 0px;
+            }
+.col-5 .image-container{
+                padding: 0px;
+            }
+    
+*/
+
+.contenido{
+            display: flex;
+               flex-wrap: wrap;
+              justify-content:space-between;
+              flex: 100%;
+              width: 100%;
+         
+                justify-content: center;
+           
+        }
+img{
+            width: 100%;
+
+
+        }
+
+.illustration-gallery{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 130px;
+    justify-content: space-between;
+  
+}
+
+.illustration{
+    width: 32.9%;
+     margin-top: 3px;
+
+    overflow: hidden;
+
+
+}
+
+.illustration:hover .image-card{
+    filter:brightness(0.8);
+  
+      transform: scale(1.02);
+      //  margin-top: 3px;
+    
+}
+.image-card{
+        filter:brightness(0.95);
+       transition: 2s;
+
+
+}
+        
+/* --------------------------------rejilla acaba-------------------------- */ 
+        
+  /* --------------------------------footer EMPIEZA-------------------------- */ 
+a{text-decoration: none;} 
+
+        .footer{
+            width: 100%;
+            height: 80px;
+      display: flex;
+     align-items: center;
+            margin-top: 10px;
+               flex-direction: column;
+      
+   
+        }
+
+        .footer p{
+           text-align: center;
+            color: black;
+            font-size: 0.9em;
+            margin-bottom: 7px;
+    
+        }
+
+.redes span a{
+
+       color:#F6B71E;
+}
+
+.redes span:hover a{
+    color:black;
+    transition: 1s;
+}
+
+ .image-container-project{
+           margin-bottom: -6px;
+     }
+
+  /* --------------------------------footer acaba-------------------------- */ 
+
+      /* --------------------------------HOVER IMAGE EMPIEZA-------------------------- */ 
+
+.text-f1 {
+position: absolute;
+z-index: 1;
+background: none;
+opacity: 0;
+
+
+}
+
+.text-f2 {
+position: absolute;
+z-index: 1;
+background: none;
+opacity:0;
+margin-left: 25px;
+    width: 25%;
+height: 23%;
+
+}
+
+ /* ----------F1--------------- */
+.text-f1 h1{
+   font-size: 0.9em;
+    color: black;
+     letter-spacing: 2px;  
+    margin-top: 40px;
+    font-weight: 500;
+       overflow: hidden;
+
+text-align: right;
+}
+
+.text-f1{
+width: 48%;
+height: 23%;
+    text-align: right;
+}
+
+.text-f1 hr{
+     border-style: solid;
+text-align: right;
+    width: 150px;
+    margin-top: 0px;
+    overflow: hidden;
+border: 0;
+    height: 2px;
+    background: black;
+    background: linear-gradient(to right,  black 80%,#F6B71E 20%);
+
+     
+}
+.text-f1 h3{
+  margin-top: -1px;  
+    color:black;
+    font-size: 0.7em;
+font-weight: 200;
+     letter-spacing: 2px;
+    text-align: right;
+   font-family: 'Roboto', sans-serif;
+}
+
+
+ /* ----------F2--------------- */
+
+.text-f2 h1{
+    font-size: 1.5em;
+    color: black;
+     letter-spacing: 2px;  
+    margin-top: 40px;
+    font-weight: 400;
+       overflow: hidden;
+font-family: 'Lora', serif;
+
+text-align: left;
+}
+
+.text-f2 hr{
+     border-style: solid;
+
+    width: 120px;
+    margin-top: -10px;
+    overflow: hidden;
+border: 0;
+    height: 2px;
+    background: black;
+    background: linear-gradient(to right,  black 80%,#F6B71E 20%);
+
+     
+}
+
+.text-f2 h3{
+  margin-top: -1px;  
+    color:black;
+    font-size: 0.7em;
+font-weight: 200;
+     letter-spacing: 2px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+    /* ------------COL-2 - TEXTO-------------------------- */
+
+.fila-3 .text{
+width: 33%;
+    margin-left: -20px;
+    text-align: right;
+}
+.image-container:hover .text-f1{
+
+    opacity: 1;
+    transition: 1.5s;
+}
+.image-container:hover .text-f2{
+
+    opacity: 1;
+    transition: 1.5s;
+}
+
+
+.image-container{
+    overflow: hidden;
+}
+
+
+  /* --------------------------------CONTACT Empieza-------------------------- */ 
+
+.contact{
+
+
+    width: 100%;
+}
+
+lo{
+     font-family: 'Patrick Hand', cursive;
+     letter-spacing: 2px;
+      margin-top: 0px;
+    text-align: right;
+     animation:moveContactLo 1s forwards;
+}
+
+.contact h1{
+font-family: 'Patrick Hand', cursive;
+    text-align: right;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin: 0px;
+    margin-right: 50px;
+   
+    color: black;
+   animation:contacth1 1s forwards;
+  
+ 
+}
+
+.col-contact{
+     display: flex;
+justify-content: center;
+     flex-wrap: wrap;
+      
+      width: 80%;
+    margin: 0 auto;
+}
+
+.col-1-contact {
+      width: 100%;
+margin: 0 auto;
+
+    overflow: hidden;
+     margin-top: 250px;
+   
+}
+.col-1-contact h2{
+    font-weight: 500;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Lora', serif;
+   font-size: 2em;
+}
+
+.col-1-contact p  {
+  text-align: center;
+    font-size: .9em;
+    font-weight: 300;
+      line-height: 1.6;
+
+
+   animation:contactP 2s forwards;
+}
+
+.col-2-contact {
+    width: 90%;
+
+     
+}
+
+.col-2-contact p i {
+ margin: 0 10px;
+
+}
+
+.col-2-contact p {
+ font-weight: 300;
+       font-size: .9em;
+
+overflow: hidden;
+       animation:contactP 2s forwards;
+      text-align: center;
+}
+
+.contact hr{
+    width: 20%;
+
+     border-top: 1px solid;
+ 
+
+   
+}
+
+.follow-me .redes-menu hr{
+    width: 20%;
+border: 1;
+    height: 1.4px;
+    background: black;
+    background: linear-gradient(to right,  black 80%,#F6B71E 20%);
+     margin-top: 3px;
+     margin-bottom: 10px;
+     
+}
+
+.redes-menu span a{
+
+       color:#F6B71E;
+}
+  /* --------------------------------CONTACT ACABA-------------------------- 
+*/
+
+  /* --------------------------------acaba responsive-------------------------- */   
+
+ /* -------------------------------EMPIEZA MOTION-------------------------- */ 
+                  
+.motion-gallery{
+    width: 100%;
+ display: flex;
+    justify-content: center;
+
+      flex-wrap: wrap;
+                  }                     
+                  
+.portada h1{
+    font-family:'Patrick Hand', cursive;
+    font-size: 1.5em;
+}
+.motion-gallery .div{
+    margin: 0px;
+}        
+
+
+.motion-gallery-gif{
+     display: flex;
+  
+    justify-content: center;
+position: absolute;
+      width: 80%;
+    opacity: 0;
+    margin: 0;
+}   
+
+.motion-gallery-gif .div{
+   margin: 0px;
+}   
+
+.motion-gallery-gif:hover{
+        opacity: 1;
+    transition: .4s;
+}
+
+.active{
+
+
+position: absolute;
+    opacity: 1;
+width: 16%;
+    margin-top: -27px;
+
+}   
+
+.unidad:hover .active{
+        opacity: 1;
+    transition: 1s;
+}
+.unidad{
+
+display: flex;
+justify-content: center;
+    align-items: center;
+        flex-wrap: wrap;
+   width: 16%;
+    margin: 0 80px;
+  
+}
+
+.static{
+
+    width: 100%;
+
+}
+
+.unidad p{
+    font-family: 'patrick Hand', cursive;
+            opacity: 1;
+    color: gray;
+}
+
+.portada{
+      width: 60%;
+    height: 70vh;
+    margin-top: 70px;
+display: flex;
+    align-items: center;
+overflow: hidden;
+}
+.image-rutina{
+   width: 60%; 
+}
+.titulo-rutina{
+    width: 30%;
+overflow: hidden;
+ 
+      
+}
+
+.titulo-rutina h2{
+   font-size: 1em;  
+    color: gray;
+}
+
+.titulo-rutina p{
+   font-size: 0.8em;  
+    color: darkgray;
+}
+
+
+
+ /* -------------------------------ACABA MOTION-------------------------- */ 
+
+
+.contact-redes{
+ width: 100%;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+
+}
+
+.contact-redes h3{
+ margin-top: -10px;
+letter-spacing: 1px;
+    font-size: .7em;
+
+}
+.contact-redes p{
+     font-size: .9em;
+}
+.contact-redes .redes{
+      margin-top: -1px;   
+}
+   .projecto{
+        width:80%;
+ 
+       
+    }
+    
+   .projecto h3{
+        text-align: center;
+
+        overflow: hidden;
+         color: gray;
+       font-size: 2em;
+         letter-spacing: 1px;
+         font-family: 'Lora', serif;
+       font-weight: 400;
+    }
+    .projecto p{
+        text-align: center;
+    color:darkgray;
+        overflow: hidden;
+         font-size: 0.8em;
+    }
+
+.video{
+    margin-top: 150px;
+}
+
+
+.playa-gallery{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content:space-between;
+  
+}
+
+.playa-img{
+    width: 50%;
+overflow: hidden;
+    margin-bottom: -3px;
+
+}
+
+.playa-text{
+    width: 30%;
+     padding-right: 100px;
+
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+ .playa-text h3{
+        text-align: center;
+
+        overflow: hidden;
+         color: gray;
+       font-size: 2em;
+     font-family: 'Lora', serif;
+     font-weight: 400;
+    }
+   .playa-text p{
+        text-align: center;
+    color:darkgray;
+        overflow: hidden;
+         font-size: 0.8em;
+    }
+
+/* -----------------------ABOUT-  EMPIEZA------------------------- */ 
+.about{
+      width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+   
+ 
+}
+.text-about{
+    width: 80%;
+  padding-left: 50px;
+    padding-right: 50px;
+        overflow: hidden; 
+    margin: 0 auto;
+}
+.text-about p{
+    font-size: .9em;
+    font-weight: 300;
+      line-height: 1.6;
+    text-align: center;
+}
+
+.text-about h2{
+    font-size: 2em;
+font-weight: 400;
+    text-align: center;
+          font-family: 'Lora', serif;
+}
+
+.text-about h3{
+    font-size: 0.9em;
+font-weight: 400;
+       text-align: center;
+         font-family: 'Patrick Hand', cursive;
+   letter-spacing: 5px;
+
+}
+
+.about hr{
+    width: 20%;
+}
+
+
+.img-about{
+     width: 30%;  
+    margin: 0 auto;
+   
+}
+/* -----------------------ABOUT - ACABA------------------------- */ 
+/* -----------------------INDEX-hecho por segunda vez------------------------- */ 
+
+.index-gallery{
+     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.index-foto{
+      width: 50%;  
+
+     overflow: hidden;
+             animation: image1 2s ease;
+}
+
+.index-foto1-2{
+      width: 33.3%;  
+     overflow: hidden;
+             animation: image1 2s ease;
+}
+.index-foto2{
+      width: 33.3%;  
+     overflow: hidden;
+             animation: image1 2s ease;
+}
+
+.index-foto:hover .image-card{
+    filter:brightness(0.8);
+  
+      transform: scale(1.03);
+      transition: 0.5s;
+    
+}
+
+.index-foto2:hover .image-card{
+    filter:brightness(0.8);
+  
+      transform: scale(1.1);
+      transition: 0.5s;
+    
+}
+
+/* -----------------------ACABA INDEX-hecho por segunda vez------------------------- */ 
+
+/* -----------------------INICIO - Final del projecto------------------------ */ 
+.finish-project{
+    width: 60%;
+    margin-top: 80px;
+    margin-bottom: -80px;
+}
+
+.finish-project h2{
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: .9em;
+    margin-top: 60px;
+}
+
+.finish-project hr{
+    color:gray;
+   
+  
+}
+
+/* -----------------------ACABA - Final del projecto------------------------ */ 
+
+.see-more{
+        display: flex;
+               flex-wrap: wrap;
+              justify-content:space-between;
+              flex: 100%;
+              width: 100%;
+}
+ @media only screen and (max-width:1100px) {
+  /* For mobile phones: */
+                  
+                      .col-1 {
+    
+     height: 100%;
+    }
+
+    .fila-3{
+         height: 100%;
+    }
+  .image-card{
+            margin-top: 0px;
+  
+        }
+                               div.col-1 div.image-container{
+        
+               margin-top: 0px;
+         
+        }
+        
+        div.col-2 div.image-container{
+            padding-left: 0px;
+           
+        }
+                  
+         .text h1{
+                font-size: 2.5em;
+            }
+            
+             .text hr{
+               margin-top: -30px;
+            }
+            .fila-
+                .text h3{
+                    font-size: .8em;
+                  }
+                  
+                             .fila-3 .text{
+    
+             margin-left: -15px;
+                                 
+        }
+     
+      
+                  .image-container-project img{
+margin-left: -20px;
+    width: 100%;
+             
+          
+}
+    .image-container-project{
+           margin-bottom: -5px;
+     }
+                  
+                   .illustration{
+        width:40%;
+        margin-top: 0px;
+        overflow: hidden;
+                            width: 32.7%;
+                      margin-top: 4px;
+    }
+                  
+                
+                  
+                  .playa-text{
+    width: 30%;
+     padding-right: 80px;
+
+    overflow: hidden;
+    margin-top: 5px;
+}
+                  
+                 
+}
+
+
+
+@media only screen and (max-width:670px) {
+    .col-1 {
+       width: 100%;
+     height: 100%;
+    }
+     .col-3 {
+       width: 100%;
+
+         
+    }
+    .fila-3{
+         height: 100%;
+    }
+    
+ .image-card {
+     margin-top: 0px;
+}
+ div.col-1 div.image-container{
+        margin-top: -1000px;  
+    }
+    
+    
+    
+    .col-1-contact {
+    width: 100%;
+  margin-right: 0px;
+    margin-top: 5px;
+          text-align: center;
+   
+}
+    
+     .col-1-contact h2{
+               text-align: center;
+             margin: 0px;
+             margin: 0px;
+         font-weight: 100;
+    }
+   
+            
+.col-contact {
+    
+        margin-top: 200px;
+    
+    }
+.col-1-contact p  {
+  text-align: center;
+    font-size: 1em;
+
+}
+
+.col-2-contact {
+    width: 80%;
+   margin-left: 0px;
+      margin-top: 10px;
+}
+
+            .col-2-contact p  {
+  text-align: center;
+    font-size: 1.em;
+
+}
+
+.col-2-contact p i {
+ margin: 0 10px;
+        font-size: .em;
+display: none;
+}
+    
+ 
+            
+   .image-rutina{
+   width: 100%; 
+}
+.titulo-rutina{
+    width: 100%;
+}
+    .titulo-rutina p{
+        text-align: center;
+    }
+        .titulo-rutina h1{
+        text-align: center;
+    }
+    
+    .portada{
+        width: 100%;
+    height: 100%;
+   
+    flex-direction: column;
+    margin-top: 120px;
+    }
+    .illustration{
+        width:100%;
+        margin-top: 0px;
+        overflow: hidden;
+    }
+    
+           .boton-menu{
+   display:block;
+
+        }
+    .menu-opciones{
+        display: none;
+    }
+     .menu-opciones-white{
+        display: none;
+    }
+    
+    
+                      .playa-text{
+    width: 30%;
+     padding-right: 50px;
+
+    overflow: hidden;
+    margin-top: 5px;
+}
+    
+.text-about{
+    width: 90%;
+  padding-left: 50px;
+    padding-right: 50px;
+        overflow: hidden; 
+}
+.text-about p{
+    font-size: 0.8em;
+     line-height: 1.8;
+    text-align: center;
+}
+
+.img-about{
+     width: 30%;  
+    display: none;
+   
+}
+.index-foto{
+      width: 100%;  
+     overflow: hidden;
+             animation: image1 2s ease;
+}
+.index-foto1-2{
+      width: 100%;  
+     overflow: hidden;
+             animation: image1 2s ease;
+}
+
+
+.index-foto2{
+      width: 100%;  
+     overflow: hidden;
+             animation: image1 2s ease;
+}
+
+}
+
