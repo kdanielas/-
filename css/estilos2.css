@@ -1,15 +1,18 @@
 /*Estilos generales*/
 
 @font-face {
-  font-family: regular;
-  src: url(../font/ProximaNova-regular.woff);
-  font-weight:regular;
+  font-family: 'regular';
+  src: url(../font/ProximaNova-Regular.otf),
+   url(../font/ProximaNova-Regular.woff)format('woff'),
+  font-weight:100;
+  font-style:normal;
 }
 
 @font-face {
-  font-family: light;
-  src: url(../font/ProximaNova-light.otf);
-  font-weight:light;
+  font-family: 'light';
+  src: url(../font/ProximaNova-Light.otf);
+  font-weight:100;
+  font-style:normal;
 }
 
 *{
