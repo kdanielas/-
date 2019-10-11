@@ -1,18 +1,15 @@
 /*Estilos generales*/
 
 @font-face {
-  font-family: 'regular';
-  src: url(../font/ProximaNova-Regular.otf),
-   url(../font/ProximaNova-Regular.woff)format('woff'),
-  font-weight:100;
-  font-style:normal;
+  font-family: regular;
+  src: url(../font/proximaNova-regular.woff);
+  font-weight:regular;
 }
 
 @font-face {
-  font-family: 'light';
-  src: url(../font/ProximaNova-Light.otf);
-  font-weight:100;
-  font-style:normal;
+  font-family: light;
+  src: url(../font/proximaNova-light.otf);
+  font-weight:light;
 }
 
 *{
@@ -79,7 +76,7 @@ h1{
 }
 
 .logo-mobile img{
-width: 80px;
+width: 110px;
     padding: 10px;
 }
 
@@ -101,7 +98,7 @@ width: 80px;
 .correo p{
 
     color: #C84600;
-   font-size: 1.1em;
+   font-size: 2.2em;
 }
 
 .redes{
@@ -115,35 +112,12 @@ width: 80px;
 }
 
 .redes i{
-    margin: 10px;
+    margin: 30px;
    
-    font-size: 1.1em;
+    font-size: 2.2em;
 }
 
 /*Verticales Acaba*/
-
-
-/*
-.menu{
-    display: flex;
-   justify-content:  flex-end;
-    width: 70%;
-    align-items: center;
-    margin-right: 40px;
-}
-
-.menu a{
-    margin: 30px;
-   
-}
-
-
-
-
-
-
-/*menu ACABA*/
-
 
     /*......................Empieza El HOME*/
 
@@ -153,6 +127,8 @@ width: 80px;
     width: 100%;
     display: flex;
 }
+
+
     
 .flecha{
 width: 100%;
@@ -167,7 +143,7 @@ bottom: 40px;
 }
 
 .flecha img{
-    width: 20px;
+    width: 50px;
  transition: .3s;
     cursor: pointer;
 }
@@ -214,16 +190,16 @@ border: 1px solid #C84600;
 }
 
 .texto{
-   margin-top: 20px;
+   margin-top: 10px;
 }
 
 .proyecto h2{
-    font-size: 1.4em;
+    font-size: 2.5em;
     font-weight: 200;
 }
 
 .proyecto h3{
-    font-size: 1em;
+    font-size: 2em;
     color: #C84600;
     font-family: light;
 }
@@ -235,7 +211,7 @@ border: 1px solid #C84600;
 
 footer{
     width: 100%;
-    height: 130px;
+    height: 180px;
     background-color: #E8E2E2;
     display: flex;
     flex-direction: column;
@@ -252,18 +228,18 @@ footer .logo-footer{
 }
 
 footer .logo-footer img{
-  width: 50px;
+  width: 80px;
 }
 
 .texto-footer h3{
-font-size: .8em;
+font-size: 1.8em;
     text-align: center;
     margin-bottom: .4em;
     color: #C84600;
 }
 
 .texto-footer p{
-font-size: .7em;
+font-size: 1.5em;
     text-align: center;
 }
 
@@ -392,29 +368,51 @@ align-items: center;
 .unidad p{
     margin-top: 40px;
 }
-
- /*......................Acaban Los proyectos*/
-
-/*DESKTOP**/
-@media only screen and (min-width: 768px) {
     
-    /*......................Empieza HOME*/
-    /*MENU EMPIEZA*/
-#menu{
-
-    display: flex;
-    flex-direction: row;
-     width: 100%;
-    height: 80px;
-    position: absolute;
-    background: none;
-  margin-top: 10px;
-    z-index: 5;
-     transition: .3s;
-  
+    .bola{
+  width: 20px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50px;
+ 
 }
     
-    .logo{
+
+
+@media only screen and (max-width: 767px) and (min-width: 20px)  {
+    
+    /*......................Empieza intro */
+
+
+    
+.intro .foto-mobile {
+   
+  height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover; 
+    background-image: url("../jpg/inicio-mobile.jpg");
+    display: flex;
+    margin: auto;
+        align-items: center;
+    justify-content:space-around;
+    align-content: center;
+}
+    .bola{
+        display: none;
+    } 
+
+    
+    
+}
+
+@media only screen and (max-width: 2000px) and (min-width: 768px)  {
+     /*......................Empieza logo*/ 
+        .logo{
     display: flex;
  justify-content:  flex-start;
     align-items: center;
@@ -432,8 +430,87 @@ align-items: center;
 width: 180px;
     padding: 40px;;
 }
+    
+        /*......................Acaba logo*/ 
+    
+    
+    /*......................Empieza intro*/
+    
+    .flecha{
 
-    /*Verticales Empieza*/
+height: 700px;
+    }
+
+.intro .foto {
+ 
+  height: 700px;
+    width: 100%;
+    background-position: center;
+    background-size: cover; 
+    background-image: url("../jpg/inicio-37.jpg");
+    display: flex;
+    margin: auto;
+        align-items: center;
+    justify-content:space-around;
+    align-content: center;
+}
+    
+
+
+.ojos{
+    
+    display: flex;
+ justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+  position: absolute;
+
+width: 300px;
+
+  text-align: center;
+    margin-top: 27px;
+  
+}
+
+.ojo{
+  width: 45px;
+  height: 35px;
+
+
+  margin: 17px;
+  border-radius: 50px;
+    margin-top: 12px;
+  position: relative;
+    background-position: center;
+    background-size: cover;
+background-image: url(../jpg/eye-36.png);
+    
+}
+    
+    .bola{
+  width: 20px;
+  height: 20px;
+  margin-top: 9px;
+     margin-left: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50px;
+ 
+}
+    
+    .flecha img{
+    width: 20px;
+ transition: .3s;
+    cursor: pointer;
+}
+      /*......................Acaba intro*/
+    
+    
+        /*Verticales Empieza*/
 
 .correo{
   
@@ -452,7 +529,7 @@ width: 180px;
 .correo p{
        transform: rotate(270deg);
     color: #C84600;
-  font-size: 1.0em;
+  font-size: 1.1em;
 }
 
 .redes{
@@ -472,169 +549,55 @@ width: 180px;
 .redes i{
     margin: 10px;
     margin-right: 40px;
-    font-size: 1.0em;
+    font-size: 1.1em;
 }
 
 /*Verticales Acaba*/
+
+         /*......................Empieza proyectos*/ 
     
-    .intro .foto-mobile {
-   
-  height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover; 
-    background-image: url("../jpg/inicio-mobile.jpg");
-    display: flex;
-    margin: auto;
-        align-items: center;
-    justify-content:space-around;
-    align-content: center;
-}
-   /* .intro .foto {
- 
-  height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover; 
-    background-image: url("../jpg/inicio.jpg");
-    display: flex;
-    margin: auto;
-        align-items: center;
-    justify-content:space-around;
-    align-content: center;
-}
+    .proyecto{
 
-.ojos{
-    
-    display: flex;
- justify-content: center;
-    align-items: center;
-
-    height: 100vh;
-  position: absolute;
-
-width: 300px;
-
-  text-align: center;
-    margin-top: 27px;
-}
-
-.ojo{
-  width: 40px;
-  height: 25px;
-
-
-  margin: 20px;
-  border-radius: 50px;
-  position: relative;
-
-    
-}
-
-.bola{
-  width: 20px;
-  height: 20px;
-  background: #000;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  border-radius: 50px;
- 
-}
-*/
- .proyecto{
-    width: 50%;
     padding: 50px;
-
-}
- /*......................Acaba HOME*/   
-    
-    /*......................Empiezan Los proyectos*/
-
-    .contenido-proyecto .container .concepto{
-    width: 60%;
- 
-    margin-top: 150px;
-margin-bottom: 50px;
-
-}
-    
-    
-      .contenido-proyecto .container .texto{
-    width: 50%;
- 
-    margin-top: 50px;
-
-
-}
-
-        /*......Empieza audiovisual*/
-    
-
-.video{
-
-    width: 50%;
-    margin: 40px 0;
-}
-    
-
-    .fotos-proyecto{
-         width: 100%;  
-            width: 100%;
-    display: flex;
-    flex-direction: row;
-        flex-wrap: wrap;
     }
-.fotos-proyecto .texto{
-
-    padding: 0 40px;
-    width: 50%;  
+    .proyecto h2{
+    font-size: 1.4em;
+    font-weight: 200;
 }
 
-    /*......acaba audiovisual*/
-    
-    
-    .unidad{
-
-display: flex;
-    flex-direction: column;
-justify-content: center;
-align-items: center;
-   width: 25%;
-    margin: 20px 20px;
-    
-  
-}
-        /*......................Acaban Los proyectos*/
-}
-
-/*IPAD*/
-
-/*Mobile*/
-@media only screen and (max-width: 768px) {
-.intro .foto-mobile {
-   
-  height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover; 
-    background-image: url("../jpg/inicio-mobile.jpg");
-    display: flex;
-    margin: auto;
-        align-items: center;
-    justify-content:space-around;
-    align-content: center;
+.proyecto h3{
+    font-size: 1em;
+    font-family: light;
 }
     
-        /*......................Empiezan Los proyectos*/
+    
+       /*......................Acaba proyectos*/  
+    
+         /*......................Empieza Footer*/ 
+    .texto-footer h3{
+font-size: .8em;
+}
 
-  /*......Empieza audiovisual*/
+.texto-footer p{
+font-size: .7em;
+}
+    
 
-
-
-
-
-    /*......acaba audiovisual*/
+    
+    footer{
+    height: 130px;
 
 }
+
+
+footer .logo-footer img{
+  width: 50px;
+}
+    
+             /*......................Acaba Footer*/ 
+}
+  /*...................... Desktop */
+
+
+
+

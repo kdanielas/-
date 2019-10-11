@@ -1,7 +1,7 @@
   var balls = document.getElementsByClassName("bola");
   document.onmousemove = function(){
-    var x = event.clientX * 100 / window.innerWidth + "%";
-    var y = event.clientY * 100 / window.innerHeight + "%";
+    var x = event.clientX * 77 / window.innerWidth + "%";
+    var y = event.clientY * 40 / window.innerHeight + "%";
     //event.clientX => get the horizontal coordinate of the mouse
     //event.clientY => get the Vertical coordinate of the mouse
     //window.innerWidth => get the browser width
