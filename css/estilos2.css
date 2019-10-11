@@ -76,7 +76,7 @@ h1{
 }
 
 .logo-mobile img{
-width: 80px;
+width: 70px;
     padding: 10px;
 }
 
@@ -119,29 +119,6 @@ width: 80px;
 
 /*Verticales Acaba*/
 
-
-/*
-.menu{
-    display: flex;
-   justify-content:  flex-end;
-    width: 70%;
-    align-items: center;
-    margin-right: 40px;
-}
-
-.menu a{
-    margin: 30px;
-   
-}
-
-
-
-
-
-
-/*menu ACABA*/
-
-
     /*......................Empieza El HOME*/
 
 /*Intro EMPIEZA*/
@@ -150,6 +127,22 @@ width: 80px;
     width: 100%;
     display: flex;
 }
+/*
+.intro .foto-mobile {
+   
+  height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover; 
+    background-image: url("../jpg/inicio-mobile.jpg");
+    display: flex;
+    margin: auto;
+        align-items: center;
+    justify-content:space-around;
+    align-content: center;
+}
+
+*/
     
 .flecha{
 width: 100%;
@@ -392,11 +385,11 @@ align-items: center;
 
  /*......................Acaban Los proyectos*/
 
-/*DESKTOP**/
-@media only screen and (min-width: 768px) {
+/*DESKTOP
+@media only screen and (max-width: 600px) and (min-width: 400px)  {
     
     /*......................Empieza HOME*/
-    /*MENU EMPIEZA*/
+    /*MENU EMPIEZA
 #menu{
 
     display: flex;
@@ -430,7 +423,7 @@ width: 180px;
     padding: 40px;;
 }
 
-    /*Verticales Empieza*/
+    /*Verticales Empieza
 
 .correo{
   
@@ -472,22 +465,9 @@ width: 180px;
     font-size: 1.0em;
 }
 
-/*Verticales Acaba*/
+/*Verticales Acaba
     
-    .intro .foto-mobile {
-   
-  height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover; 
-    background-image: url("../jpg/inicio-mobile.jpg");
-    display: flex;
-    margin: auto;
-        align-items: center;
-    justify-content:space-around;
-    align-content: center;
-}
-   /* .intro .foto {
+.intro .foto {
  
   height: 100vh;
     width: 100%;
@@ -500,6 +480,9 @@ width: 180px;
     justify-content:space-around;
     align-content: center;
 }
+    .intro .foto-mobile {
+        display: none;
+    }
 
 .ojos{
     
@@ -514,13 +497,14 @@ width: 300px;
 
   text-align: center;
     margin-top: 27px;
+  
 }
 
 .ojo{
   width: 40px;
   height: 25px;
 
-
+  background-color: rgba(255,0,0,.5);
   margin: 20px;
   border-radius: 50px;
   position: relative;
@@ -539,7 +523,7 @@ width: 300px;
   border-radius: 50px;
  
 }
-*/
+
  .proyecto{
     width: 50%;
     padding: 50px;
@@ -547,7 +531,7 @@ width: 300px;
 }
  /*......................Acaba HOME*/   
     
-    /*......................Empiezan Los proyectos*/
+    /*......................Empiezan Los proyectos
 
     .contenido-proyecto .container .concepto{
     width: 60%;
@@ -566,7 +550,7 @@ margin-bottom: 50px;
 
 }
 
-        /*......Empieza audiovisual*/
+        /*......Empieza audiovisual
     
 
 .video{
@@ -589,7 +573,7 @@ margin-bottom: 50px;
     width: 50%;  
 }
 
-    /*......acaba audiovisual*/
+    /*......acaba audiovisual
     
     
     .unidad{
@@ -603,13 +587,211 @@ align-items: center;
     
   
 }
-        /*......................Acaban Los proyectos*/
+        /*......................Acaban Los proyectos
+}
+*/
+
+@media only screen and (max-width: 2560px) and (min-width: 1441px)  {
+    
+    /*......................Empieza intro*/
+
+.intro .foto {
+ 
+  height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover; 
+    background-image: url("../jpg/inicio.jpg");
+    display: flex;
+    margin: auto;
+        align-items: center;
+    justify-content:space-around;
+    align-content: center;
+}
+    
+    .intro .foto-mobile {
+        display: none;
+    }
+
+.ojos{
+    
+    display: flex;
+ justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+  position: absolute;
+
+width: 300px;
+
+  text-align: center;
+    margin-top: 27px;
+  
 }
 
-/*IPAD*/
+.ojo{
+  width: 38px;
+  height: 22px;
 
-/*Mobile*/
-@media only screen and (max-width: 768px) {
+  background-color: rgba(255,0,0,0.5);
+  margin: 17px;
+  border-radius: 50px;
+    margin-top: 12px;
+  position: relative;
+
+    
+}
+    
+    .bola{
+  width: 20px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50px;
+ 
+}
+    
+}
+
+
+@media only screen and (max-width: 1440px) and (min-width: 1025px)  {
+    
+    /*......................Empieza intro*/
+
+.intro .foto {
+ 
+  height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover; 
+    background-image: url("../jpg/inicio.jpg");
+    display: flex;
+    margin: auto;
+        align-items: center;
+    justify-content:space-around;
+    align-content: center;
+}
+    
+.intro .foto-mobile {
+        display: none;
+    }
+
+.ojos{
+    
+    display: flex;
+ justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+  position: absolute;
+
+width: 300px;
+
+  text-align: center;
+    margin-top: 27px;
+  
+}
+
+.ojo{
+  width: 38px;
+  height: 22px;
+
+  background-color: rgba(255,0,0,0.5);
+  margin: 17px;
+  border-radius: 50px;
+    margin-top: 12px;
+  position: relative;
+
+    
+}
+    
+    .bola{
+  width: 20px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50px;
+ 
+}
+    
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 769px)  {
+    
+    /*......................Empieza intro*/
+
+.intro .foto {
+ 
+  height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover; 
+    background-image: url("../jpg/inicio.jpg");
+    display: flex;
+    margin: auto;
+        align-items: center;
+    justify-content:space-around;
+    align-content: center;
+}
+    .intro .foto-mobile {
+        display: none;
+    }
+
+.ojos{
+    
+    display: flex;
+ justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+  position: absolute;
+
+width: 300px;
+
+  text-align: center;
+    margin-top: 27px;
+  
+}
+
+.ojo{
+  width: 38px;
+  height: 22px;
+
+  background-color: rgba(255,0,0,0.5);
+  margin: 17px;
+  border-radius: 50px;
+    margin-top: 12px;
+  position: relative;
+
+    
+}
+    
+    .bola{
+  width: 20px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50px;
+ 
+}
+    
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 10px)  {
+    
+    /*......................Empieza intro*/
+
 .intro .foto-mobile {
    
   height: 100vh;
@@ -623,15 +805,11 @@ align-items: center;
     justify-content:space-around;
     align-content: center;
 }
+
+
     
-        /*......................Empiezan Los proyectos*/
-
-  /*......Empieza audiovisual*/
-
-
-
-
-
-    /*......acaba audiovisual*/
-
 }
+
+
+
+/*Mobile*/
