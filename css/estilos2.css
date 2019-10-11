@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: regular;
-  src: url(../font/ProximaNova-Regular.woff);
+  src: url(../font/proximaNova-regular.woff);
   font-weight:regular;
 }
 
 @font-face {
   font-family: light;
-  src: url(../font/ProximaNova-Light.otf);
+  src: url(../font/proximaNova-light.otf);
   font-weight:light;
 }
 
@@ -112,12 +112,35 @@ width: 80px;
 }
 
 .redes i{
-    margin: 15px;
+    margin: 10px;
    
     font-size: 1.1em;
 }
 
 /*Verticales Acaba*/
+
+
+/*
+.menu{
+    display: flex;
+   justify-content:  flex-end;
+    width: 70%;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.menu a{
+    margin: 30px;
+   
+}
+
+
+
+
+
+
+/*menu ACABA*/
+
 
     /*......................Empieza El HOME*/
 
@@ -127,8 +150,6 @@ width: 80px;
     width: 100%;
     display: flex;
 }
-
-
     
 .flecha{
 width: 100%;
@@ -190,7 +211,7 @@ border: 1px solid #C84600;
 }
 
 .texto{
-   margin-top: 10px;
+   margin-top: 20px;
 }
 
 .proyecto h2{
@@ -322,7 +343,7 @@ margin-bottom: 50px;
 .video{
 display: flex;
     width: 100%;
-
+    margin: 10px 0;
 }
 
 .fotos-proyecto .texto{
@@ -368,44 +389,29 @@ align-items: center;
 .unidad p{
     margin-top: 40px;
 }
-    
 
-    
- /*...................... celuco */
+ /*......................Acaban Los proyectos*/
 
-@media(max-width:768px) {
+/*DESKTOP**/
+@media only screen and (min-width: 768px) {
     
-    /*......................Empieza intro */
+    /*......................Empieza HOME*/
+    /*MENU EMPIEZA*/
+#menu{
 
-
-    
-.intro .foto-mobile {
-   
-  height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover; 
-    background-image: url("../jpg/inicio-mobile.jpg");
     display: flex;
-    margin: auto;
-        align-items: center;
-    justify-content:space-around;
-    align-content: center;
+    flex-direction: row;
+     width: 100%;
+    height: 80px;
+    position: absolute;
+    background: none;
+  margin-top: 10px;
+    z-index: 5;
+     transition: .3s;
+  
 }
-
     
-       .video{
-
-    margin: -80px 0;
-}
-    
-    
-}
-
- /*...................... Desktop */
-@media(min-width:768px) {
-     /*......................Empieza logo*/
-        .logo{
+    .logo{
     display: flex;
  justify-content:  flex-start;
     align-items: center;
@@ -423,83 +429,8 @@ align-items: center;
 width: 180px;
     padding: 40px;;
 }
-    
-        /*......................Acaba logo*/ 
-    
-    
-    /*......................Empieza intro*/
-    
-    .flecha{
 
-height: 700px;
-    }
-
-.intro .foto {
- 
-  height: 700px;
-    width: 100%;
-    background-position: center;
-    background-size: cover; 
-    background-image: url("../jpg/inicio-37.jpg");
-    display: flex;
-    margin: auto;
-        align-items: center;
-    justify-content:space-around;
-    align-content: center;
-}
-    
-
-
-.ojos{
-    
-    display: flex;
- justify-content: center;
-    align-items: center;
-
-    height: 100vh;
-  position: absolute;
-
-width: 300px;
-
-  text-align: center;
-    margin-top: 27px;
-  
-}
-
-.ojo{
-  width: 45px;
-  height: 35px;
-
-
-  margin: 17px;
-  border-radius: 50px;
-    margin-top: 12px;
-  position: relative;
-    background-position: center;
-    background-size: cover;
-background-image: url(../jpg/eye-36.png);
-    
-}
-    
-    .bola{
-  width: 20px;
-  height: 20px;
-  margin-top: 9px;
-     margin-left: 2px;
-  background: #000;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  border-radius: 50px;
- 
-}
-    
-  
-      /*......................Acaba intro*/
-    
-    
-        /*Verticales Empieza*/
+    /*Verticales Empieza*/
 
 .correo{
   
@@ -512,13 +443,13 @@ background-image: url(../jpg/eye-36.png);
     justify-content: center;
     align-items: flex-start;
    
-    left: -115px;
+    left: -100px;
 }
 
 .correo p{
        transform: rotate(270deg);
     color: #C84600;
-
+  font-size: 1.0em;
 }
 
 .redes{
@@ -538,47 +469,169 @@ background-image: url(../jpg/eye-36.png);
 .redes i{
     margin: 10px;
     margin-right: 40px;
-
+    font-size: 1.0em;
 }
 
 /*Verticales Acaba*/
-
-         /*......................Empieza proyectos */
     
-    .proyecto{
-
-    padding: 50px;
-    }
-    
+    .intro .foto-mobile {
    
-    
-    
-       /*......................Acaba proyectos*/  
-    
-         /*......................Empieza Footer*/
-
-    
-
-    
-
-
-
-
-    
-             /*......................Acaba Footer*/
-    
-        /*......................Empieza proyecto especifico */
-    
-  .video{
-
-    margin: 10px 0;
+  height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover; 
+    background-image: url("../jpg/inicio-mobile.jpg");
+    display: flex;
+    margin: auto;
+        align-items: center;
+    justify-content:space-around;
+    align-content: center;
 }
-    
-         /*......................Acaba proyecto especifico */
-}
+   /* .intro .foto {
  
- /*...................... Desktop */
+  height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover; 
+    background-image: url("../jpg/inicio.jpg");
+    display: flex;
+    margin: auto;
+        align-items: center;
+    justify-content:space-around;
+    align-content: center;
+}
+
+.ojos{
+    
+    display: flex;
+ justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+  position: absolute;
+
+width: 300px;
+
+  text-align: center;
+    margin-top: 27px;
+}
+
+.ojo{
+  width: 40px;
+  height: 25px;
+
+
+  margin: 20px;
+  border-radius: 50px;
+  position: relative;
+
+    
+}
+
+.bola{
+  width: 20px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50px;
+ 
+}
+*/
+ .proyecto{
+    width: 50%;
+    padding: 50px;
+
+}
+ /*......................Acaba HOME*/   
+    
+    /*......................Empiezan Los proyectos*/
+
+    .contenido-proyecto .container .concepto{
+    width: 60%;
+ 
+    margin-top: 150px;
+margin-bottom: 50px;
+
+}
+    
+    
+      .contenido-proyecto .container .texto{
+    width: 50%;
+ 
+    margin-top: 50px;
+
+
+}
+
+        /*......Empieza audiovisual*/
+    
+
+.video{
+
+    width: 50%;
+    margin: 40px 0;
+}
+    
+
+    .fotos-proyecto{
+         width: 100%;  
+            width: 100%;
+    display: flex;
+    flex-direction: row;
+        flex-wrap: wrap;
+    }
+.fotos-proyecto .texto{
+
+    padding: 0 40px;
+    width: 50%;  
+}
+
+    /*......acaba audiovisual*/
+    
+    
+    .unidad{
+
+display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+   width: 25%;
+    margin: 20px 20px;
+    
+  
+}
+        /*......................Acaban Los proyectos*/
+}
+
+/*IPAD*/
+
+/*Mobile*/
+@media only screen and (max-width: 768px) {
+.intro .foto-mobile {
+   
+  height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover; 
+    background-image: url("../jpg/inicio-mobile.jpg");
+    display: flex;
+    margin: auto;
+        align-items: center;
+    justify-content:space-around;
+    align-content: center;
+}
+    
+        /*......................Empiezan Los proyectos*/
+
+  /*......Empieza audiovisual*/
 
 
 
 
+
+    /*......acaba audiovisual*/
+
+}
