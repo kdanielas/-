@@ -369,21 +369,11 @@ align-items: center;
     margin-top: 40px;
 }
     
-    .bola{
-  width: 20px;
-  height: 20px;
-  background: #000;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  border-radius: 50px;
- 
-}
+
     
 
 
-@media only screen and (max-width: 767px) and (min-width: 20px)  {
+@media(max-width:600px) {
     
     /*......................Empieza intro */
 
@@ -402,16 +392,13 @@ align-items: center;
     justify-content:space-around;
     align-content: center;
 }
-    .bola{
-        display: none;
-    } 
 
     
     
 }
 
-@media only screen and (max-width: 2000px) and (min-width: 768px)  {
-     /*......................Empieza logo*/ 
+@media(min-width:768px) {
+     /*......................Empieza logo*/
         .logo{
     display: flex;
  justify-content:  flex-start;
@@ -554,12 +541,13 @@ background-image: url(../jpg/eye-36.png);
 
 /*Verticales Acaba*/
 
-         /*......................Empieza proyectos*/ 
+         /*......................Empieza proyectos */
     
     .proyecto{
 
     padding: 50px;
     }
+    
     .proyecto h2{
     font-size: 1.4em;
     font-weight: 200;
@@ -573,7 +561,7 @@ background-image: url(../jpg/eye-36.png);
     
        /*......................Acaba proyectos*/  
     
-         /*......................Empieza Footer*/ 
+         /*......................Empieza Footer*/
     .texto-footer h3{
 font-size: .8em;
 }
@@ -594,9 +582,10 @@ footer .logo-footer img{
   width: 50px;
 }
     
-             /*......................Acaba Footer*/ 
+             /*......................Acaba Footer*/
 }
-  /*...................... Desktop */
+ 
+ /*...................... Desktop */
 
 
 
