@@ -131,7 +131,7 @@ width: 80px;
  
 
     width: 100%;
- background-color: #E8E2E2;
+
     display: flex;
     margin: auto;
     align-items: center;
@@ -434,7 +434,7 @@ align-items: center;
 
     background-position:center;
     background-size: cover; 
-background-image: url("../jpg/changer-1.jpg");
+ background-color: #EFEDED;
 }
     /*......................Empieza intro 
 
