@@ -130,7 +130,7 @@ width: 80px;
 .intro .foto {
  
 
-    width: 100%;
+
 
     display: flex;
     margin: auto;
@@ -431,7 +431,8 @@ align-items: center;
   
   .intro .foto {
  
-
+    width: 100%;
+    height:500px;
     background-position:center;
     background-size: cover; 
  background-color: #EFEDED;
