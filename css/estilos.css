@@ -504,7 +504,7 @@ height: 690px;
   .intro .foto {
  
 height: 700px;
-
+width:100%;
     background-position:center;
     background-size: cover; 
     background-image: url("../jpg/inicio-37.jpg");
