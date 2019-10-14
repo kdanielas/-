@@ -402,10 +402,9 @@ align-items: center;
     background-size: cover; 
     background-image: url("../jpg/inicio-37.jpg");
     display: flex;
-    margin: auto;
         align-items: center;
     justify-content:space-around;
-    align-content: center;
+
 }
     
 
