@@ -396,7 +396,7 @@ align-items: center;
     
 .intro .foto {
  
-  height: 700px;
+  height: 100vh;
     width: 100%;
     background-position: center;
     background-size: cover; 
@@ -503,8 +503,6 @@ height: 700px;
     justify-content:space-around;
     align-content: center;
 }
-    
-
 
 .ojos{
     
@@ -606,31 +604,40 @@ background-image: url(../jpg/eye-36.png);
     padding: 50px;
     }
     
-   
-    
-    
        /*......................Acaba proyectos*/  
     
-         /*......................Empieza Footer*/
-
-    
-
-    
-
-
-
-
-    
-             /*......................Acaba Footer*/
-    
+ 
         /*......................Empieza proyecto especifico */
     
-  .video{
+    
+     /*......................Empieza Rutina */
+          .unidad{
 
+   width: 25%;
+    margin: 20px 20px;
+    
+  
+}
+         /*......................AcaRutina */
+   .fotos-proyecto{
+         width: 100%;  
+            width: 100%;
+    display: flex;
+    flex-direction: row;
+        flex-wrap: wrap;
+    }  
+ .video{
+
+    width: 50%;
     margin: 10px 0;
 }
-    
-         /*......................Acaba proyecto especifico */
+.contenido-proyecto .container .texto{
+    width: 50%;
+ 
+    margin-top: 50px;
+
+
+}
 }
  
  /*...................... Desktop */
