@@ -429,7 +429,10 @@ align-items: center;
  /*...................... celuco */
 
 @media(max-width:767px) {
-    
+    .intro .foto {
+      
+      display:none;
+  }
     /*......................Empieza intro 
 
 
