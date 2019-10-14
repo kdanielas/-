@@ -129,14 +129,12 @@ width: 80px;
 }
 .intro .foto {
  
-height: 600px;
-    width: 100%;
-    background-position:center;
-    background-size: cover; 
-    background-image: url("../jpg/inicio-37.jpg");
+
+
+
     display: flex;
     margin: auto;
-        align-items: center;
+    align-items: center;
     justify-content:space-around;
     align-content: center;
 }
@@ -429,7 +427,16 @@ align-items: center;
  /*...................... celuco */
 
 @media(max-width:767px) {
-    
+
+  
+  .intro .foto {
+ 
+    width: 100%;
+    height:500px;
+    background-position:center;
+    background-size: cover; 
+  background-image: url("../jpg/inicio-37.jpg");
+}
     /*......................Empieza intro 
 
 
@@ -492,13 +499,17 @@ width: 180px;
 height: 690px;
     }
 
-.intro .foto {
+
+
+  .intro .foto {
  
-  height: 700px;
+height: 700px;
+width:100%;
+    background-position:center;
+    background-size: cover; 
+    background-image: url("../jpg/inicio-37.jpg");
 
 }
-
-
     
   
       /*......................Acaba intro*/
