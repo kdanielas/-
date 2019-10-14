@@ -127,7 +127,17 @@ width: 80px;
     width: 100%;
     display: flex;
 }
+.intro .foto {
+ 
 
+    width: 100%;
+ background-color: #E8E2E2;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content:space-around;
+    align-content: center;
+}
 .ojos{
     
     display: flex;
@@ -421,16 +431,10 @@ align-items: center;
   
   .intro .foto {
  
-height: 600px;
-    width: 100%;
+
     background-position:center;
     background-size: cover; 
-
-    display: flex;
-    margin: auto;
-        align-items: center;
-    justify-content:space-around;
-    align-content: center;
+background-image: url("../jpg/changer-1.jpg");
 }
     /*......................Empieza intro 
 
@@ -499,15 +503,11 @@ height: 690px;
   .intro .foto {
  
 height: 700px;
-    width: 100%;
+
     background-position:center;
     background-size: cover; 
     background-image: url("../jpg/inicio-37.jpg");
-    display: flex;
-    margin: auto;
-        align-items: center;
-    justify-content:space-around;
-    align-content: center;
+
 }
     
   
