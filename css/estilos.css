@@ -516,7 +516,9 @@ width: 180px;
     /*......................Empieza intro*/
     
    
-
+.intro{
+  height:700px;
+  }
 
 /*
   .intro .foto {
