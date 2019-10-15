@@ -516,7 +516,13 @@ width: 180px;
     /*......................Empieza intro*/
     
    
-
+    .intro{
+        height: 100vh;
+    }
+    
+    .pelo{
+        height: 90%;
+    }
 
 /*
   .intro .foto {
