@@ -126,31 +126,54 @@ width: 80px;
 .intro{
     width: 100%;
     display: flex;
+    height: 600px;
+    background-color: #f1edef;
+    flex-direction: column;
+
 }
-.intro .foto {
- 
 
-
-
+.pelo{
+    position: absolute;
     display: flex;
-    margin: auto;
+    justify-content: center;
     align-items: center;
-    justify-content:space-around;
-    align-content: center;
+    width: 100%;
+    height: 500px;
 }
+
+.pelo img{
+    width: 500px;
+}
+
+.cara{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+margin: auto;
+    
+}
+
+.ojos{
+    margin-top: 90px;
+}
+
+.texto-intro h1{
+    font-size: 1.3em;
+    font-weight: 100;
+    letter-spacing: .2em;
+      text-align: center;
+      margin: 0 auto;
+
+    font-family: 'Patrick Hand SC', cursive;
+}
+.texto-intro p{
+    text-align: center;
+
+}
+
 .ojos{
     
     display: flex;
- justify-content: center;
-    align-items: center;
-
-    height: 100vh;
-  position: absolute;
-
-width: 300px;
-
-  text-align: center;
-    margin-top: 27px;
   
 }
 
@@ -169,7 +192,7 @@ background-image: url(../jpg/eye-36.png);
     
 }
     
-    .bola{
+.bola{
   width: 20px;
   height: 20px;
   margin-top: 9px;
@@ -185,26 +208,21 @@ background-image: url(../jpg/eye-36.png);
     
 .flecha{
 width: 100%;
-height: 490px;
-position: absolute;
+    height: 600px;
+    display: flex;
+    position: absolute;
+
+    justify-content: center;
+    align-items: flex-end;
     
-display: flex;
-align-items: flex-end;
-justify-content: center;
-
-
+    margin-top: -30px;
 }
-
 .flecha img{
     width: 20px;
  transition: .3s;
-    cursor: pointer;
 }
 
-.flecha img:hover img{
-filter: blur(3);
- 
-}
+
 
 /*Intro acaba*/
 
@@ -427,7 +445,7 @@ align-items: center;
  /*...................... celuco */
 
 @media(max-width:767px) {
-
+/*
   
   .intro .foto {
  
@@ -435,27 +453,19 @@ align-items: center;
     height:500px;
     background-position:center;
     background-size: cover; 
-  background-image: url("../jpg/inicio-37.jpg");
+background-color: #EFEDED;
 }
-    /*......................Empieza intro 
-
-
     
-.intro .foto-mobile {
-   
-  height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover; 
-    background-image: url("../jpg/inicio-mobile.jpg");
-    display: flex;
-    margin: auto;
-        align-items: center;
-    justify-content:space-around;
-    align-content: center;
-}
+    .intro .foto img{
+        width: 500px;
+        margin-bottom: 60px;
+        position: absolute;
+    }
+    /*......................Empieza intro */
 
-*/
+
+
+
     
 
     
@@ -494,24 +504,28 @@ width: 180px;
     
     /*......................Empieza intro*/
     
-    .flecha{
-
-height: 690px;
-    }
+   
 
 
-
+/*
   .intro .foto {
  
 height: 700px;
 width:100%;
     background-position:center;
     background-size: cover; 
-    background-image: url("../jpg/inicio-37.jpg");
+   background-color: #EFEDED;
 
 }
+      .intro .foto img{
+        width: 600px;
+        margin-bottom: 60px;
+    }
     
-  
+    .texto-intro{
+        height: 200px;
+    }
+    */
       /*......................Acaba intro*/
     
     
@@ -602,6 +616,7 @@ width:100%;
 }
 }
  
+
  /*...................... Desktop */
 
 
