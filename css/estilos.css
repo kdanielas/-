@@ -444,7 +444,7 @@ align-items: center;
     
  /*...................... celuco */
 
-<<<<<<< HEAD
+
 @media(max-width:767px) {
 /*
 =======
@@ -516,6 +516,7 @@ width: 180px;
     /*......................Empieza intro*/
     
    
+<<<<<<< HEAD
     .intro{
         height: 100vh;
     }
@@ -523,6 +524,11 @@ width: 180px;
     .pelo{
         height: 90%;
     }
+=======
+.intro{
+  height:700px;
+  }
+>>>>>>> 9ab2252d2b966f98f995b5d74540ee72d233a821
 
 /*
   .intro .foto {
