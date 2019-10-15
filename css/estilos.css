@@ -444,8 +444,13 @@ align-items: center;
     
  /*...................... celuco */
 
+<<<<<<< HEAD
 @media(max-width:767px) {
 /*
+=======
+@media(max-width:768px) {
+
+>>>>>>> 62333ad34798e0427a196263d92ad2b11a8c2a7d
   
   .intro .foto {
  
@@ -453,7 +458,13 @@ align-items: center;
     height:500px;
     background-position:center;
     background-size: cover; 
+<<<<<<< HEAD
 background-color: #EFEDED;
+=======
+  background-image: url("../jpg/inicio-36.jpg");
+
+    margin:0 auto;
+>>>>>>> 62333ad34798e0427a196263d92ad2b11a8c2a7d
 }
     
     .intro .foto img{
