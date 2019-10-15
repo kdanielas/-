@@ -436,6 +436,7 @@ align-items: center;
     background-position:center;
     background-size: cover; 
   background-image: url("../jpg/inicio-36.jpg");
+    margin:0 auto;
 }
     /*......................Empieza intro 
 
