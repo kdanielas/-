@@ -446,7 +446,18 @@ align-items: center;
 
 
 @media(max-width:767px) {
+<<<<<<< HEAD
+    body{
+        overflow-x: hidden;
+    }
+    .intro .foto img{
+        width: 500px;
+        margin-bottom: 60px;
+        position: absolute;
+    }
+=======
 
+>>>>>>> 13fddea6c873c6ce889324baccac6846edb98129
     /*......................Empieza intro */
 
 
@@ -500,27 +511,15 @@ width: 180px;
         height: 90%;
     }
 
+<<<<<<< HEAD
+.intro{
+  height:700px;
+  }
+=======
+
+>>>>>>> 13fddea6c873c6ce889324baccac6846edb98129
 
 
-/*
-  .intro .foto {
- 
-height: 700px;
-width:100%;
-    background-position:center;
-    background-size: cover; 
-   background-color: #EFEDED;
-
-}
-      .intro .foto img{
-        width: 600px;
-        margin-bottom: 60px;
-    }
-    
-    .texto-intro{
-        height: 200px;
-    }
-    */
       /*......................Acaba intro*/
     
     
