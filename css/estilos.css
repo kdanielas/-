@@ -446,27 +446,9 @@ align-items: center;
 
 
 @media(max-width:767px) {
-/*
-=======
-@media(max-width:768px) {
-
->>>>>>> 62333ad34798e0427a196263d92ad2b11a8c2a7d
-  
-  .intro .foto {
- 
-    width: 100%;
-    height:500px;
-    background-position:center;
-    background-size: cover; 
-<<<<<<< HEAD
-background-color: #EFEDED;
-=======
-  background-image: url("../jpg/inicio-36.jpg");
-
-    margin:0 auto;
->>>>>>> 62333ad34798e0427a196263d92ad2b11a8c2a7d
-}
-    
+    body{
+        overflow-x: hidden;
+    }
     .intro .foto img{
         width: 500px;
         margin-bottom: 60px;
@@ -516,7 +498,7 @@ width: 180px;
     /*......................Empieza intro*/
     
    
-<<<<<<< HEAD
+
     .intro{
         height: 100vh;
     }
@@ -524,31 +506,12 @@ width: 180px;
     .pelo{
         height: 90%;
     }
-=======
+
 .intro{
   height:700px;
   }
->>>>>>> 9ab2252d2b966f98f995b5d74540ee72d233a821
 
-/*
-  .intro .foto {
- 
-height: 700px;
-width:100%;
-    background-position:center;
-    background-size: cover; 
-   background-color: #EFEDED;
 
-}
-      .intro .foto img{
-        width: 600px;
-        margin-bottom: 60px;
-    }
-    
-    .texto-intro{
-        height: 200px;
-    }
-    */
       /*......................Acaba intro*/
     
     
