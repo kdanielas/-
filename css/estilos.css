@@ -446,6 +446,7 @@ align-items: center;
 
 
 @media(max-width:767px) {
+<<<<<<< HEAD
     body{
         overflow-x: hidden;
     }
@@ -454,6 +455,9 @@ align-items: center;
         margin-bottom: 60px;
         position: absolute;
     }
+=======
+
+>>>>>>> 13fddea6c873c6ce889324baccac6846edb98129
     /*......................Empieza intro */
 
 
@@ -507,9 +511,13 @@ width: 180px;
         height: 90%;
     }
 
+<<<<<<< HEAD
 .intro{
   height:700px;
   }
+=======
+
+>>>>>>> 13fddea6c873c6ce889324baccac6846edb98129
 
 
       /*......................Acaba intro*/
