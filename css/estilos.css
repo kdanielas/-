@@ -217,6 +217,7 @@ width: 100%;
     
     margin-top: -30px;
 }
+
 .flecha img{
     width: 20px;
  transition: .3s;
@@ -446,7 +447,7 @@ align-items: center;
 
 
 @media(max-width:767px) {
-<<<<<<< HEAD
+
     body{
         overflow-x: hidden;
     }
@@ -455,9 +456,7 @@ align-items: center;
         margin-bottom: 60px;
         position: absolute;
     }
-=======
 
->>>>>>> 13fddea6c873c6ce889324baccac6846edb98129
     /*......................Empieza intro */
 
 
